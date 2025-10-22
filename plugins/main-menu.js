@@ -21,6 +21,14 @@ let handler = async (m, { conn, args }) => {
 ╰─────────────────
 `.trim()
 
+*🔥LINK PARA Peticiones🔥*
+
+Link para hacer peticiones: 
+
+https://iqj1y2o6.forms.app/peticiones
+
+¡Gracias por tu atención!
+  
   const menus = {
     info: `
 ˚ ₊ ‧  ꒰🍄꒱  — \`『 I N F O — B O T 』\` 
