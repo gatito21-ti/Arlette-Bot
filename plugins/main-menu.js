@@ -20,6 +20,24 @@ let handler = async (m, { conn, args }) => {
 │🜸 Baileys » Multi Device
 ╰─────────────────
 `.trim()
+   info: `
+˚ ₊ ‧  ꒰🎀꒱  — \`『 I N F O — B O T 』\` 
+> Comandos de *Info-bot*.
+ */help • /menu*
+> ⚘ Ver el menú de comandos.
+ */sug • /suggest*
+> ⚘ Sugerir nuevas funciones al desarrollador.
+ */reporte • /reportar*
+> ⚘ Reportar fallas o problemas del bot.
+ */p • /ping*
+> ⚘ Ver la velocidad de respuesta del Bot.
+ */status • /system*
+> ⚘ Ver estado del sistema de alojamiento.
+ */stest • /speedtest*
+> ⚘ Ver las estadísticas de velocidad de la Bot.
+ */ds • /fixmsg*
+> ⚘ Eliminar archivos de sesión innecesarios.`,
+     
 🍆𝘼𝙦𝙪í 𝙚𝙨𝙩á𝙣 𝙩𝙤𝙙𝙤𝙨 𝙡𝙤𝙨 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙦𝙪𝙚 𝙥𝙪𝙚𝙙𝙚𝙣 𝙪𝙨𝙖𝙧 𝙩𝙖𝙣𝙩𝙤 𝙥𝙖𝙧
 𝙙𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙧 𝙫𝙞𝙙𝙚𝙤𝙨 𝙙𝙚 𝙩𝙞𝙠𝙩𝙤𝙠, 𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠, 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 𝙚𝙘𝙩 𝙥𝙪𝙚𝙙𝙚𝙣
 𝙘𝙧𝙚𝙖𝙣 𝙨𝙩𝙞𝙘𝙠𝙚𝙧𝙨 𝙮 𝙢𝙪𝙘𝙝𝙖𝙨 𝙘𝙤𝙨𝙖𝙨 𝙢á𝙨 𝙨𝙤𝙡𝙤𝙨 𝙚𝙨 𝙥𝙤𝙣𝙚𝙧 / 𝙖𝙣𝙩𝙚𝙨 
@@ -131,27 +149,6 @@ https://iqj1y2o6.forms.app/peticiones
 > ⚘ Ver la Informacion del grupo.
  */link*
 > ⚘ Ver enlace de invitación del grupo.`,
-
-
-
-    info: `
-˚ ₊ ‧  ꒰🎀꒱  — \`『 I N F O — B O T 』\` 
-> Comandos de *Info-bot*.
- */help • /menu*
-> ⚘ Ver el menú de comandos.
- */sug • /suggest*
-> ⚘ Sugerir nuevas funciones al desarrollador.
- */reporte • /reportar*
-> ⚘ Reportar fallas o problemas del bot.
- */p • /ping*
-> ⚘ Ver la velocidad de respuesta del Bot.
- */status • /system*
-> ⚘ Ver estado del sistema de alojamiento.
- */stest • /speedtest*
-> ⚘ Ver las estadísticas de velocidad de la Bot.
- */ds • /fixmsg*
-> ⚘ Eliminar archivos de sesión innecesarios.`,
-
     
 
     utilidades: `
