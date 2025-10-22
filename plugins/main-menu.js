@@ -8,7 +8,7 @@ let handler = async (m, { conn, args }) => {
 
   const menuHeader = (userId) => `
 ︶⊹︶︶୨୧︶︶⊹︶︶⊹︶︶୨୧︶︶⊹︶︶⊹︶
-「🎀」 ¡Hola! *@${userId.split('@')[0]}*, Soy *${botname}*, Aquí tienes la lista de comandos.
+「🍄」 ¡Hola! *@${userId.split('@')[0]}*, Soy *${botname}*, Aquí tienes la lista de comandos.
 > Para Ver Tu Perfil Usa */perfil* ❒
 
 ╭┈ ↷
