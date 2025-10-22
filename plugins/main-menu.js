@@ -12,24 +12,27 @@ let handler = async (m, { conn, args }) => {
 > Para Ver Tu Perfil Usa */perfil* ❒
 
 ╭┈ ↷
-│❀ *Modo* » Privado
+│❀ *Modo* » Público
 │ᰔ *Tipo* » ${(conn.user.jid == global.conn.user.jid ? 'Principal 🎀' : 'Sub-Bot 💗')}
 │✰ *Usuarios* » ${totalreg.toLocaleString()}
 │⚘ *Versión* » ${vs}
 │ꕥ *Comandos* » ${totalCommands}
 │🜸 Baileys » Multi Device
 ╰────────────────
-  const menus = {
+'.trim()
 
-*🔥LINK PARA Peticiones🔥*
+  const menus = {
+    info: `
+
+  
+🔥LINK PARA Peticiones🔥
 
 Link para hacer peticiones: 
 
 https://iqj1y2o6.forms.app/peticiones
 
 ¡Gracias por tu atención
-    
-    info: `
+  
 ˚ ₊ ‧  ꒰🍄꒱  — \`『 I N F O — B O T 』\` 
 > Comandos de *Info-bot*.
  */help • /menu*
@@ -209,16 +212,16 @@ https://iqj1y2o6.forms.app/peticiones
 > ⚘ Ver la Informacion del grupo.
  */link*
 > ⚘ Ver enlace de invitación del grupo.`
-}
+  }
 
-const category = args[0]?.toLowerCase()
-let selectedMenu = menus[category]
+  const category = args[0]?.toLowerCase()
+  let selectedMenu = menus[category]
 
-if (!selectedMenu) {
-selectedMenu = Object.values(menus).join('\n\n')
-}
+  if (!selectedMenu) {
+  selectedMenu = Object.values(menus).join('\n\n')
+  }
 
-const txt = `${menuHeader(userId)}\n${selectedMenu}\n\n> ✐ Powered By Speed3xz`
+  const txt = `${menuHeader(userId)}\n${selectedMenu}\n\n> ✐ Powered By Speed3xz`
 
 await conn.sendMessage(m.chat, { 
 text: txt,
