@@ -22,16 +22,7 @@ let handler = async (m, { conn, args }) => {
 '.trim()
 
   const menus = {
-    info: `
-
-  
-🔥LINK PARA Peticiones🔥
-
-Link para hacer peticiones: 
-
-https://iqj1y2o6.forms.app/peticiones
-
-¡Gracias por tu atención
+    info: '
   
 ˚ ₊ ‧  ꒰🍄꒱  — \`『 I N F O — B O T 』\` 
 > Comandos de *Info-bot*.
