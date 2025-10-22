@@ -8,7 +8,7 @@ let handler = async (m, { conn, args }) => {
 
   const menuHeader = (userId) => `
 ︶⊹︶︶୨୧︶︶⊹︶︶⊹︶︶୨୧︶︶⊹︶︶⊹︶
-「🍄」 ¡Hola! *@${userId.split('@')[0]}*, Soy *${botname}*, Aquí tienes la lista de comandos.
+「🎀」 ¡Hola! *@${userId.split('@')[0]}*, Soy *${botname}*, Aquí tienes la lista de comandos.
 > Para Ver Tu Perfil Usa */perfil* ❒
 
 ╭┈ ↷
@@ -18,103 +18,12 @@ let handler = async (m, { conn, args }) => {
 │⚘ *Versión* » ${vs}
 │ꕥ *Comandos* » ${totalCommands}
 │🜸 Baileys » Multi Device
-╰────────────────
-'.trim()
+╰─────────────────
+`.trim()
 
   const menus = {
-    info: '
-  
-˚ ₊ ‧  ꒰🍄꒱  — \`『 I N F O — B O T 』\` 
-> Comandos de *Info-bot*.
- */help • /menu*
-> ⚘ Ver el menú de comandos.
- */sug • /suggest*
-> ⚘ Sugerir nuevas funciones al desarrollador.
- */reporte • /reportar*
-> ⚘ Reportar fallas o problemas del bot.
- */owner • /creador*
-> ⚘ Contacto del creador del bot.
- */p • /ping*
-> ⚘ Ver la velocidad de respuesta del Bot.
- */sc • /script*
-> ⚘ Link del repositorio oficial de la Bot
- */status • /system*
-> ⚘ Ver estado del sistema de alojamiento.
- */stest • /speedtest*
-> ⚘ Ver las estadísticas de velocidad de la Bot.
- */ds • /fixmsg*
-> ⚘ Eliminar archivos de sesión innecesarios.`,
-
-    utilidades: `
-₊ ‧  ♦️  — \`『 U T I L I D A D E S 』\` 
-> Comandos de *Útilidades*.
- */calcular • /cal*
-> ⚘ Calcular tipos de ecuaciones.
- */delmeta*
-> ⚘ Restablecer el pack y autor por defecto para tus stickers.
- */getpic • /pfp* + [@usuario]
-> ⚘ Ver la foto de perfil de un usuario.
- */say* + [texto]
-> ⚘ Repetir un mensaje
- */setmeta* + [autor] | [pack]
-> ⚘ Establecer el pack y autor por defecto para tus stickers.
- */sticker • /s • /wm* + {citar una imagen/video}
-> ⚘ Convertir una imagen/video a sticker
- */toimg • /img* + {citar sticker}
-> ⚘ Convertir un sticker/imagen de una vista a imagen.
- */brat • /bratv • /qc • /emojimix*︎ 
-> ⚘ Crear stickers con texto.
- */enhance • /remini • /hd*
-> ⚘ Mejorar calidad de una imagen.
- */letra • /style* 
-> ⚘ Cambia la fuente de las letras.
- */read • /readviewonce*
-> ⚘ Ver imágenes viewonce.
- */ss • /ssweb*
-> ⚘ Ver el estado de una página web.
- */translate • /traducir • /trad*
-> ⚘ Traducir palabras en otros idiomas.
- */ia • /gemini*
-> ⚘ Preguntar a Chatgpt.
- */tourl • /catbox*
-> ⚘ Convertidor de imágen/video en urls.
- */wiki • /wikipedia*
-> ⚘ Investigar temas a través de Wikipedia.
- */dalle • /flux*
-> ⚘ Crear imágenes con texto mediante IA.
- */google*
-> ⚘ Realizar búsquedas por Google.`,
-
-    descargas: `
-♦️『 D E S C A R G A S 』\` 
-> Comandos de *Descargas* para descargar archivos de varias fuentes.
- */tiktok • /tt* + [Link] / [busqueda]
-> ⚘ Descargar un video de TikTok.
- */mediafire • /mf* + [Link]
-> ⚘ Descargar un archivo de MediaFire.
- */mega • /mg* + [Link]
-> ⚘ Descargar un archivo de MEGA.
- */play • /play2 • /ytmp3 • /ytmp4* + [Cancion] / [Link]
-> ⚘ Descargar una cancion o vídeo de YouTube.
- */facebook • /fb* + [Link]
-> ⚘ Descargar un video de Facebook.
- */twitter • /x* + [Link]
-> ⚘ Descargar un video de Twitter/X.
- */ig • /instagram* + [Link]
-> ⚘ Descargar un reel de Instagram.
- */pinterest • /pin* + [busqueda] / [Link]
-> ⚘ Buscar y descargar imagenes de Pinterest.
- */image • /imagen* + [busqueda]
-> ⚘ Buscar y descargar imagenes e Google.
- */apk • /modapk* + [busqueda]
-> ⚘ Descargar un apk de Aptoide.
- */ytsearch • /search* + [busqueda]
-> ⚘ Buscar videos de YouTube.`,
-
-
-
-   bots: `
-₊ ‧♦️『 B O T S 』\` 
+    bots: `
+₊ ‧  ꒰🍓꒱  — \`『 B O T S 』\` 
 > Comandos para registrar tu propio Bot.
  */qr • /code*
 > ⚘ Crear un Sub-Bot con un codigo QR/Code
@@ -138,9 +47,8 @@ let handler = async (m, { conn, args }) => {
 > ⚘ Cambiar el nombre de usuario`,
 
     
-
     grupos: `
-♦️『 G R U P O S 』\` 
+₊ ‧  ꒰🦋꒱  — \`『 G R U P O S 』\` 
 > Comandos para *Administradores* de grupos.
  */tag • /hidetag • /invocar • /tagall* + [mensaje]
 > ⚘ Envía un mensaje mencionando a todos los usuarios del grupo.
@@ -155,6 +63,9 @@ let handler = async (m, { conn, args }) => {
  */demote* + <@usuario> | {mencion}
 > ⚘ Descender a un usuario de administrador.
  */economy* + [enable/disable]
+> ⚘ Activar/desactivar los comandos de economía
+ */gacha* + [enable/disable]
+> ⚘ Activar/desactivar los comandos de Gacha y Games.
  */welcome • /bienvenida* + [enable/disable]
 > ⚘ Activar/desactivar la bienvenida y despedida.
  */setbye* + [texto]
@@ -163,7 +74,7 @@ let handler = async (m, { conn, args }) => {
 > ⚘ Establece un bot como primario del grupo.
  */setwelcome* + [texto]
 > ⚘ Establecer un mensaje de bienvenida personalizado.
- */kick* + <@usuario> | {menciona}
+ */kick* + <@usuario> | {mencion}
 > ⚘ Expulsar a un usuario del grupo.
  */nsfw* + [enable/disable]
 > ⚘ Activar/desactivar los comandos NSFW
@@ -202,14 +113,102 @@ let handler = async (m, { conn, args }) => {
  */gp • /infogrupo*
 > ⚘ Ver la Informacion del grupo.
  */link*
-> ⚘ Ver enlace de invitación del grupo.`
+> ⚘ Ver enlace de invitación del grupo.`,
+
+
+
+    descargas: `
+₊ ‧  ꒰🌷꒱  — \`『 D E S C A R G A S 』\` 
+> Comandos de *Descargas* para descargar archivos de varias fuentes.
+ */tiktok • /tt* + [Link] / [busqueda]
+> ⚘ Descargar un video de TikTok.
+ */mediafire • /mf* + [Link]
+> ⚘ Descargar un archivo de MediaFire.
+ */mega • /mg* + [Link]
+> ⚘ Descargar un archivo de MEGA.
+ */play • /play2 • /ytmp3 • /ytmp4* + [Cancion] / [Link]
+> ⚘ Descargar una cancion o vídeo de YouTube.
+ */facebook • /fb* + [Link]
+> ⚘ Descargar un video de Facebook.
+ */twitter • /x* + [Link]
+> ⚘ Descargar un video de Twitter/X.
+ */ig • /instagram* + [Link]
+> ⚘ Descargar un reel de Instagram.
+ */pinterest • /pin* + [busqueda] / [Link]
+> ⚘ Buscar y descargar imagenes de Pinterest.
+ */image • /imagen* + [busqueda]
+> ⚘ Buscar y descargar imagenes de Google.
+ */apk • /modapk* + [busqueda]
+> ⚘ Descargar un apk de Aptoide.
+ */ytsearch • /search* + [busqueda]
+> ⚘ Buscar videos de YouTube.`,
+
+    
+
+    info: `
+˚ ₊ ‧  ꒰🎀꒱  — \`『 I N F O — B O T 』\` 
+> Comandos de *Info-bot*.
+ */help • /menu*
+> ⚘ Ver el menú de comandos.
+ */sug • /suggest*
+> ⚘ Sugerir nuevas funciones al desarrollador.
+ */reporte • /reportar*
+> ⚘ Reportar fallas o problemas del bot.
+ */p • /ping*
+> ⚘ Ver la velocidad de respuesta del Bot.
+ */status • /system*
+> ⚘ Ver estado del sistema de alojamiento.
+ */stest • /speedtest*
+> ⚘ Ver las estadísticas de velocidad de la Bot.
+ */ds • /fixmsg*
+> ⚘ Eliminar archivos de sesión innecesarios.`,
+
+    utilidades: `
+₊ ‧  ꒰🍨꒱  — \`『 U T I L I D A D E S 』\` 
+> Comandos de *Útilidades*.
+ */calcular • /cal*
+> ⚘ Calcular tipos de ecuaciones.
+ */delmeta*
+> ⚘ Restablecer el pack y autor por defecto para tus stickers.
+ */getpic • /pfp* + [@usuario]
+> ⚘ Ver la foto de perfil de un usuario.
+ */say* + [texto]
+> ⚘ Repetir un mensaje
+ */setmeta* + [autor] | [pack]
+> ⚘ Establecer el pack y autor por defecto para tus stickers.
+ */sticker • /s • /wm* + {citar una imagen/video}
+> ⚘ Convertir una imagen/video a sticker
+ */toimg • /img* + {citar sticker}
+> ⚘ Convertir un sticker/imagen de una vista a imagen.
+ */brat • /bratv • /qc • /emojimix*︎ 
+> ⚘ Crear stickers con texto.
+ */enhance • /remini • /hd*
+> ⚘ Mejorar calidad de una imagen.
+ */letra • /style* 
+> ⚘ Cambia la fuente de las letras.
+ */read • /readviewonce*
+> ⚘ Ver imágenes viewonce.
+ */ss • /ssweb*
+> ⚘ Ver el estado de una página web.
+ */translate • /traducir • /trad*
+> ⚘ Traducir palabras en otros idiomas.
+ */ia • /gemini*
+> ⚘ Preguntar a Chatgpt.
+ */tourl • /catbox*
+> ⚘ Convertidor de imágen/video en urls.
+ */wiki • /wikipedia*
+> ⚘ Investigar temas a través de Wikipedia.
+ */dalle • /flux*
+> ⚘ Crear imágenes con texto mediante IA.
+ */google*
+> ⚘ Realizar búsquedas por Google.`,
   }
 
   const category = args[0]?.toLowerCase()
   let selectedMenu = menus[category]
 
   if (!selectedMenu) {
-  selectedMenu = Object.values(menus).join('\n\n')
+    selectedMenu = Object.values(menus).join('\n\n')
   }
 
   const txt = `${menuHeader(userId)}\n${selectedMenu}\n\n> ✐ Powered By Speed3xz`
