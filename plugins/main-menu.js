@@ -18,9 +18,7 @@ let handler = async (m, { conn, args }) => {
 │⚘ *Versión* » ${vs}
 │ꕥ *Comandos* » ${totalCommands}
 │🜸 Baileys » Multi Device
-╰─────────────────
-`.trim()
-  
+╰────────────────
   const menus = {
 
 *🔥LINK PARA Peticiones🔥*
@@ -210,18 +208,17 @@ https://iqj1y2o6.forms.app/peticiones
  */gp • /infogrupo*
 > ⚘ Ver la Informacion del grupo.
  */link*
-> ⚘ Ver enlace de invitación del grupo.`,
+> ⚘ Ver enlace de invitación del grupo.`
+}
 
-  }
+const category = args[0]?.toLowerCase()
+let selectedMenu = menus[category]
 
-  const category = args[0]?.toLowerCase()
-  let selectedMenu = menus[category]
+if (!selectedMenu) {
+selectedMenu = Object.values(menus).join('\n\n')
+}
 
-  if (!selectedMenu) {
-    selectedMenu = Object.values(menus).join('\n\n')
-  }
-
-  const txt = `${menuHeader(userId)}\n${selectedMenu}\n\n> ✐ Powered By Speed3xz`
+const txt = `${menuHeader(userId)}\n${selectedMenu}\n\n> ✐ Powered By Speed3xz`
 
 await conn.sendMessage(m.chat, { 
 text: txt,
