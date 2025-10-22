@@ -20,33 +20,50 @@ let handler = async (m, { conn, args }) => {
 │🜸 Baileys » Multi Device
 ╰─────────────────
 `.trim()
+🍆𝘼𝙦𝙪í 𝙚𝙨𝙩á𝙣 𝙩𝙤𝙙𝙤𝙨 𝙡𝙤𝙨 𝙘𝙤𝙢𝙖𝙣𝙙𝙤 𝙦𝙪𝙚 𝙥𝙪𝙚𝙙𝙚𝙣 𝙪𝙨𝙖𝙧 𝙩𝙖𝙣𝙩𝙤 𝙥𝙖𝙧
+𝙙𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙧 𝙫𝙞𝙙𝙚𝙤𝙨 𝙙𝙚 𝙩𝙞𝙠𝙩𝙤𝙠, 𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠, 𝙔𝙤𝙪𝙏𝙪𝙗𝙚 𝙚𝙘𝙩 𝙥𝙪𝙚𝙙𝙚𝙣
+𝙘𝙧𝙚𝙖𝙣 𝙨𝙩𝙞𝙘𝙠𝙚𝙧𝙨 𝙮 𝙢𝙪𝙘𝙝𝙖𝙨 𝙘𝙤𝙨𝙖𝙨 𝙢á𝙨 𝙨𝙤𝙡𝙤𝙨 𝙚𝙨 𝙥𝙤𝙣𝙚𝙧 / 𝙖𝙣𝙩𝙚𝙨 
+𝙙𝙚𝙡 𝙘𝙤𝙢𝙖𝙣𝙙𝙤, 𝙘𝙤𝙢𝙤 𝙩𝙚 𝙡𝙤 𝙢𝙪𝙚𝙨𝙩𝙧𝙖 𝙖𝙝í.
+𝙀𝙨𝙥𝙚𝙧𝙤 𝙡𝙚𝙨 𝙜𝙪𝙨𝙩𝙚 𝙢𝙞𝙨 𝙡𝙤𝙦𝙪𝙞𝙩𝙤𝙨 ♥️
 
+*🔥LINK PARA Peticiones🔥*
+
+Link para hacer peticiones: 
+
+https://iqj1y2o6.forms.app/peticiones
+¡Gracias por tu atención!
+
+
+  
   const menus = {
-    bots: `
-₊ ‧  ꒰🍓꒱  — \`『 B O T S 』\` 
-> Comandos para registrar tu propio Bot.
- */qr • /code*
-> ⚘ Crear un Sub-Bot con un codigo QR/Code
- */bots • /botlist*
-> ⚘ Ver el numero de bots activos.
- */status • /estado*
-> ⚘ Ver estado del bot.
- */p • /ping*
-> ⚘ Medir tiempo de respuesta.
- */join* + [Invitacion]
-> ⚘ Unir al bot a un grupo.
- */leave • /salir*
-> ⚘ Salir de un grupo.
- */logout*
-> ⚘ Cerrar sesion del bot.
- */setpfp • /setimage*
-> ⚘ Cambiar la imagen de perfil
- */setstatus* + [estado]
-> ⚘ Cambiar el estado del bot
- */setusername* + [nombre]
-> ⚘ Cambiar el nombre de usuario`,
-
+    descargas: `
+₊ ‧  ꒰🌷꒱  — \`『 D E S C A R G A S 』\` 
+> Comandos de *Descargas* para descargar archivos de varias fuentes.
+ */tiktok • /tt* + [Link] / [busqueda]
+> ⚘ Descargar un video de TikTok.
+ */mediafire • /mf* + [Link]
+> ⚘ Descargar un archivo de MediaFire.
+ */mega • /mg* + [Link]
+> ⚘ Descargar un archivo de MEGA.
+ */play • /play2 • /ytmp3 • /ytmp4* + [Cancion] / [Link]
+> ⚘ Descargar una cancion o vídeo de YouTube.
+ */facebook • /fb* + [Link]
+> ⚘ Descargar un video de Facebook.
+ */twitter • /x* + [Link]
+> ⚘ Descargar un video de Twitter/X.
+ */ig • /instagram* + [Link]
+> ⚘ Descargar un reel de Instagram.
+ */pinterest • /pin* + [busqueda] / [Link]
+> ⚘ Buscar y descargar imagenes de Pinterest.
+ */image • /imagen* + [busqueda]
+> ⚘ Buscar y descargar imagenes de Google.
+ */apk • /modapk* + [busqueda]
+> ⚘ Descargar un apk de Aptoide.
+ */ytsearch • /search* + [busqueda]
+> ⚘ Buscar videos de YouTube.`,
     
+
+ 
     grupos: `
 ₊ ‧  ꒰🦋꒱  — \`『 G R U P O S 』\` 
 > Comandos para *Administradores* de grupos.
@@ -117,34 +134,6 @@ let handler = async (m, { conn, args }) => {
 
 
 
-    descargas: `
-₊ ‧  ꒰🌷꒱  — \`『 D E S C A R G A S 』\` 
-> Comandos de *Descargas* para descargar archivos de varias fuentes.
- */tiktok • /tt* + [Link] / [busqueda]
-> ⚘ Descargar un video de TikTok.
- */mediafire • /mf* + [Link]
-> ⚘ Descargar un archivo de MediaFire.
- */mega • /mg* + [Link]
-> ⚘ Descargar un archivo de MEGA.
- */play • /play2 • /ytmp3 • /ytmp4* + [Cancion] / [Link]
-> ⚘ Descargar una cancion o vídeo de YouTube.
- */facebook • /fb* + [Link]
-> ⚘ Descargar un video de Facebook.
- */twitter • /x* + [Link]
-> ⚘ Descargar un video de Twitter/X.
- */ig • /instagram* + [Link]
-> ⚘ Descargar un reel de Instagram.
- */pinterest • /pin* + [busqueda] / [Link]
-> ⚘ Buscar y descargar imagenes de Pinterest.
- */image • /imagen* + [busqueda]
-> ⚘ Buscar y descargar imagenes de Google.
- */apk • /modapk* + [busqueda]
-> ⚘ Descargar un apk de Aptoide.
- */ytsearch • /search* + [busqueda]
-> ⚘ Buscar videos de YouTube.`,
-
-    
-
     info: `
 ˚ ₊ ‧  ꒰🎀꒱  — \`『 I N F O — B O T 』\` 
 > Comandos de *Info-bot*.
@@ -162,6 +151,8 @@ let handler = async (m, { conn, args }) => {
 > ⚘ Ver las estadísticas de velocidad de la Bot.
  */ds • /fixmsg*
 > ⚘ Eliminar archivos de sesión innecesarios.`,
+
+    
 
     utilidades: `
 ₊ ‧  ꒰🍨꒱  — \`『 U T I L I D A D E S 』\` 
